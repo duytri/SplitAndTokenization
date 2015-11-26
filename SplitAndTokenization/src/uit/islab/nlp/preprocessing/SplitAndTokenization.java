@@ -2,16 +2,10 @@ package uit.islab.nlp.preprocessing;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Dictionary;
-import java.util.Enumeration;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
 
-import libsvm.svm;
 import uit.islab.classifier.svm.svm_train;
 import vn.hus.nlp.sd.SentenceDetector;
 import vn.hus.nlp.sd.SentenceDetectorFactory;
@@ -101,7 +95,7 @@ public class SplitAndTokenization {
 		System.out.println(
 				"Tokenized " + nTokens + " words of " + inputFiles.length + " files in " + duration + " (s).\n");
 		
-		svm_train train = new svm_train();
+		//svm_train train = new svm_train();
 		//t.run();
 	}
 
