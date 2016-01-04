@@ -76,7 +76,7 @@ public class SplitAndTokenization {
 			for (int i = 0; i < matrixWords.length; i++) {
 				for (int j = 0; j < matrixWords[i].length; j++) {
 					nTokens++;
-					tfidfResultSet.put(matrixWords[i][j]+" ["+i+"]", tCalc.tfIdf(matrixWords[i], matrixWords, matrixWords[i][j]));
+					tfidfResultSet.put(matrixWords[i][j]+"["+i+"]", tCalc.tfIdf(matrixWords[i], matrixWords, matrixWords[i][j]));
 				}
 			}
 			
@@ -86,7 +86,7 @@ public class SplitAndTokenization {
 			// Show result
 			Set<String> keys = tfidfResultSet.keySet();
 			for (String key : keys) {
-				System.out.println(key + " ----- " + tfidfResultSet.get(key));
+				System.out.println(key + "-----" + tfidfResultSet.get(key));
 			}
 
 		}
